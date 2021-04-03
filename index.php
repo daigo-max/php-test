@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php
-    printf("こんばんは");
+    printf("こんばんは!");
     ?>
 </body>
 </html>
