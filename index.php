@@ -16,6 +16,10 @@
         print $myName. "、こんばんは!<br>";
         print "あなたのスコアは" . $score . "点です<br>";
         print "こんばんは!<br>";
+
+        $myName = "悟空";
+
+        print $myName. "、さようなら!<br>";
     
 
     ?>
