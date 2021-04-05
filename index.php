@@ -13,7 +13,8 @@
         $myName = "だいご";
 
         //コメントテスト
-        print "こんばんは!<br>";
+        print $myName. "、こんばんは!<br>";
+        print "あなたのスコアは" . $score . "点です<br>";
         print "こんばんは!<br>";
     
 
