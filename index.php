@@ -19,7 +19,19 @@
         $x = 3**2;
         print $x . "<br>";
 
-//------------------
+//BMI(肥満指数)----
+//体重(kg) ÷ (身長(m) × 身長(m))
+    $myName = "だいご";
+    $myHeight = 177;
+    $myWeight = 60;
+    $myBMI = $myWeight / ( ($myHeight / 100)**2 );
+
+    print $myName. "、こんにちは!<br>";
+    print "身長は{$myHeight}cm<br>";
+    print "体重は{$myWeight}kg<br>";
+    print "あなたのBMIは{$myBMI}です<br>";
+
+//-----------------
         $x = 1;
         $score = 1000;
         $myName = "だいご";
