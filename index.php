@@ -8,6 +8,16 @@
 </head>
 <body>
     <?php
+    //条件分岐---
+        $x = 1;
+
+        if( $x == 1) {
+            print "真ですよ";
+        } else {
+            print "偽ですよ";
+        }
+        exit();
+    //----------
         $x = 1;
         $x = $x + 2;
         print $x . "<br>";
