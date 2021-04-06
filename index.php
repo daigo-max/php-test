@@ -9,10 +9,12 @@
 <body>
     <?php
     //条件分岐---
-        $x = 1;
+        $x = 2;
 
         if( $x == 1) {
             print "真ですよ";
+        } else if( $x == 2){
+            print "2ですよ";
         } else {
             print "偽ですよ";
         }
