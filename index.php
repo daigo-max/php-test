@@ -41,17 +41,21 @@
             print "ふーん<br>";
         }
 
-//-------------
+//論理演算子-------------
     $x = 1;
     $y = 0;
     $z = 0;
 
     if( $x == 1 || ( $y == 1 && $z = 1 ) ) {
-        print "ture";
+        print "ture<br>";
     } else {
-        print "false";
+        print "false<br>";
     }
 
+//三項演算子--------
+    $x = ($y == 1) ? 100 : 50;
+
+    print "xは{$x}";
     ?>
 </body>
 </html>
