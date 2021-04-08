@@ -40,7 +40,18 @@
         } else {
             print "ふーん<br>";
         }
-        exit();
+
+//-------------
+    $x = 1;
+    $y = 0;
+    $z = 0;
+
+    if( $x == 1 || ( $y == 1 && $z = 1 ) ) {
+        print "ture";
+    } else {
+        print "false";
+    }
+
     ?>
 </body>
 </html>
