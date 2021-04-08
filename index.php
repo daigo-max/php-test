@@ -8,17 +8,6 @@
 </head>
 <body>
     <?php
-    //条件分岐---
-        $x = 2;
-
-        if( $x == 1) {
-            print "真ですよ";
-        } else if( $x == 2){
-            print "2ですよ";
-        } else {
-            print "偽ですよ";
-        }
-        exit();
     //----------
         $x = 1;
         $x = $x + 2;
@@ -42,25 +31,16 @@
     print "身長は{$myHeight}cm<br>";
     print "体重は{$myWeight}kg<br>";
     print "あなたのBMIは{$myBMI}です<br>";
-
-//-----------------
-        $x = 1;
-        $score = 1000;
-        $myName = "だいご";
-
-        //コメントテスト
-        print $myName. "、こんばんは!<br>";
-        print "あなたのスコアは" . $score . "点です<br>";
-        print "こんばんは!<br>";
-
-        $myName = "悟空";
-
-        print $myName. "、さようなら!<br>";
     
-
+        //条件分岐---
+        if( $myBMI < 19 ) {
+            print "ガリガリですよ<br>";
+        } else if( $myBMI < 22 ){
+            print "ちょうどいいですね<br>";
+        } else {
+            print "ふーん<br>";
+        }
+        exit();
     ?>
-    <script>
-        document.write("おやすみ")
-    </script>
 </body>
 </html>
