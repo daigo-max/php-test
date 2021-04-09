@@ -27,11 +27,16 @@
     $myWeight = 60;
     $myBMI = $myWeight / ( ($myHeight / 100)**2 );
 
+    for( $i = 0; $i < 3; $i++ ) {
     print $myName. "、こんにちは!<br>";
     print "身長は{$myHeight}cm<br>";
     print "体重は{$myWeight}kg<br>";
     print "あなたのBMIは{$myBMI}です<br>";
-    
+    print "<br>";
+    //体重を増やす
+    $myWeight += 5;
+    $myBMI = $myWeight / ( ($myHeight / 100)**2 );
+    }
         //条件分岐---
         if( $myBMI < 19 ) {
             print "ガリガリですよ<br>";
