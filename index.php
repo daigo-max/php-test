@@ -62,11 +62,14 @@
     }
 
     $i = 0;
+    $flag = true;
 
-    while( $i < 5 ) {
+    while( $flag ) {
         print "while処理{$i}<br>";
-
         $i++;
+        if( $i == 5 ) {
+            $flag = false;
+        }
     }
 
     ?>
