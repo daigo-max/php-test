@@ -57,9 +57,17 @@
 
     print "xは{$x}<br>";
 //-----------------
-for( $i = 0; $i < 10; $i++ ) {
-    print "処理{$i}<br>";
-}
+    for( $i = 0, $j = 10; $i <= 10; $i++. $j-- ) {
+        print "for処理{$i}:{$j}<br>";
+    }
+
+    $i = 0;
+
+    while( $i < 5 ) {
+        print "while処理{$i}<br>";
+
+        $i++;
+    }
 
     ?>
 </body>
