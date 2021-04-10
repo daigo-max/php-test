@@ -22,12 +22,12 @@
 
 //BMI(肥満指数)----
 //体重(kg) ÷ (身長(m) × 身長(m))
-    $myName = "だいご";
+ /*   $myName = "だいご";
     $myHeight = 177;
     $myWeight = 60;
     $myBMI = $myWeight / ( ($myHeight / 100)**2 );
 
-    for( $i = 0; $i < 3; $i++ ) {
+    while( $myBMI < 30 ) {
     print $myName. "、こんにちは!<br>";
     print "身長は{$myHeight}cm<br>";
     print "体重は{$myWeight}kg<br>";
@@ -44,7 +44,7 @@
             print "ちょうどいいですね<br>";
         } else {
             print "ふーん<br>";
-        }
+        }*/
 
 //論理演算子-------------
     $x = 1;
@@ -76,6 +76,15 @@
             $flag = false;
         }
     }
+
+//数列---------------]
+    $hensu = [1, 2, 10];
+
+    print "{$hensu[0]}<br>";
+
+    $total = $hensu[0] + $hensu[1] + $hensu[2];
+
+    print "{$total}<br>";
 
     ?>
 </body>
