@@ -80,9 +80,11 @@
 //数列---------------]
     $hensu = [1, 2, 10];
 
-    print "{$hensu[0]}<br>";
+    $total = 0;
 
-    $total = $hensu[0] + $hensu[1] + $hensu[2];
+    for( $i = 0; $i < 3; $i++ ) {
+        $total += $hensu[$i];
+    }
 
     print "{$total}<br>";
 
