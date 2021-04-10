@@ -99,8 +99,14 @@
         [3, 4, 5] // [1][x]
     ];
 
-    print $aa[1][1];
+    print "{$aa[1][1]}<br>";
 
+    $member = [
+        $member = [ "name" => "田中", "weight" => 50 ],
+        $member = [ "name" => "山根", "weight" => 55 ],
+    ];
+
+    print $member[1]["weight"];
     ?>
 </body>
 </html>
