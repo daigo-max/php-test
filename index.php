@@ -9,17 +9,18 @@
 <body>
     <?php
     //function-------
-    print "山田、";
-    talk();
+    print "山田<br>";
+    talk(1);
 
-    print "樋口、";
-    talk();
+    print "樋口<br>";
+    talk(2);
 
-    print "伊藤、";
-    talk();
+    print "伊藤<br>";
+    talk(3);
 
 
-    function talk() {
+    function talk($x) {
+        print $x . "<br>";
         print "こんにちは<br>";
         print "最近どう？<br>";
         print "じゃあねー<br>";
