@@ -22,20 +22,20 @@
 
 //BMI(肥満指数)----
 //体重(kg) ÷ (身長(m) × 身長(m))
- /*   $myName = "だいご";
+    $myName = "だいご";
     $myHeight = 177;
     $myWeight = 60;
     $myBMI = $myWeight / ( ($myHeight / 100)**2 );
 
-    while( $myBMI < 30 ) {
-    print $myName. "、こんにちは!<br>";
-    print "身長は{$myHeight}cm<br>";
-    print "体重は{$myWeight}kg<br>";
-    print "あなたのBMIは{$myBMI}です<br>";
-    print "<br>";
-    //体重を増やす
-    $myWeight += 5;
-    $myBMI = $myWeight / ( ($myHeight / 100)**2 );
+    $name = [ "田中", "山根", "小杉" ];
+
+    for( $i = 0; $i < 3; $i++ ) {
+        $myName = $name[$i];
+        print $myName. "、こんにちは!<br>";
+        print "身長は{$myHeight}cm<br>";
+        print "体重は{$myWeight}kg<br>";
+        print "あなたのBMIは{$myBMI}です<br>";
+        print "<br>";
     }
         //条件分岐---
         if( $myBMI < 19 ) {
@@ -44,7 +44,7 @@
             print "ちょうどいいですね<br>";
         } else {
             print "ふーん<br>";
-        }*/
+        }
 
 //論理演算子-------------
     $x = 1;
@@ -102,11 +102,17 @@
     print "{$aa[1][1]}<br>";
 
     $member = [
-        $member = [ "name" => "田中", "weight" => 50 ],
-        $member = [ "name" => "山根", "weight" => 55 ],
+        [//昨日
+            [ "name" => "田中", "weight" => 50 ],
+            [ "name" => "山根", "weight" => 55 ],
+        ],
+        [//今日
+            [ "name" => "田中", "weight" => 50 ],
+            [ "name" => "山根", "weight" => 55 ],
+        ],
     ];
 
-    print $member[1]["weight"];
+    print $member[0][1]["name"];
     ?>
 </body>
 </html>
