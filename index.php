@@ -8,17 +8,24 @@
 </head>
 <body>
     <?php
-    //----------
-        $x = 1;
-        $x = $x + 2;
-        print $x . "<br>";
+    //function-------
+    print "山田、";
+    talk();
 
-        $x = 10;
-        $x++;
-        print $x . "<br>";
+    print "樋口、";
+    talk();
 
-        $x = 3**2;
-        print $x . "<br>";
+    print "伊藤、";
+    talk();
+
+
+    function talk() {
+        print "こんにちは<br>";
+        print "最近どう？<br>";
+        print "じゃあねー<br>";
+        print "<br>";
+    }
+
 
 //BMI(肥満指数)----
 //体重(kg) ÷ (身長(m) × 身長(m))
@@ -28,7 +35,7 @@
     $myBMI = $myWeight / ( ($myHeight / 100)**2 );
 
     $name = [ "田中", "山根", "小杉" ];
-
+/*
     for( $i = 0; $i < 3; $i++ ) {
         $myName = $name[$i];
         print $myName. "、こんにちは!<br>";
@@ -45,7 +52,7 @@
         } else {
             print "ふーん<br>";
         }
-
+*/
 //論理演算子-------------
     $x = 1;
     $y = 0;
@@ -100,7 +107,6 @@
     ];
 
     print "{$aa[1][1]}<br>";
-
     $member = [
         [//昨日
             [ "name" => "田中", "weight" => 50 ],
@@ -109,7 +115,7 @@
         [//今日
             [ "name" => "田中", "weight" => 50 ],
             [ "name" => "山根", "weight" => 55 ],
-        ],
+        ]
     ];
 
     print $member[0][1]["name"];
