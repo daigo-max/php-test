@@ -9,19 +9,39 @@
 <body>
     <?php
     //function-------
-    talk("山田");
+    function calcBMI($height, $weight) {
+        $bmi = $weight / ( ($height / 100)**2 );
 
-    talk("樋口");
+        return $bmi;
+    }
 
-    talk("伊藤");
+    talk("山田", 188, 62);
+
+    talk("樋口", 153, 52);
+
+    talk("伊藤", 176, 68);
 
 
-    function talk($name) {
+    function talk($name, $height, $weight) {
         print $name . "<br>";
         print "こんにちは<br>";
+        print "身長は". $height. "cm、";
+        print "体重は". $weight. "kg<br>";
+
+        $bmi = calcBMI($height, $weight);
+
+        print "BIMは". $bmi . "ですね<br>";
         print "最近どう？<br>";
-        print "じゃあねー<br>";
-        print "<br>";
+        if( $name == "伊藤" ) {
+            bye();
+        } else {
+            print "じゃあねー<br>";
+            print "<br>";
+        }
+    }
+
+    function bye() {
+        print "さようなら<br>";
     }
 
 
