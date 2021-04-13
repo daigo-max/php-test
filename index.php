@@ -12,7 +12,9 @@
     function calcBMI($height, $weight) {
         $bmi = $weight / ( ($height / 100)**2 );
 
-        return $bmi;
+        $x = round($bmi, 2);
+
+        return $x;
     }
 
     talk("山田", 188, 62);
