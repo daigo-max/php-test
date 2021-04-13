@@ -10,11 +10,7 @@
     <?php
     //function-------
     function calcBMI($height, $weight) {
-        $bmi = $weight / ( ($height / 100)**2 );
-
-        $x = round($bmi, 2);
-
-        return $x;
+        return $bmi = round($weight / ( ($height / 100)**2 ), 2);
     }
 
     talk("山田", 188, 62);
