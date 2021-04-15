@@ -47,6 +47,17 @@
         print "さようなら<br>";
     }
 
+    //timestamp
+
+    $x = time();
+    print $x;
+
+    print "<br>";
+    print "<br>";
+
+    //date();
+    $d = date("Y年n月d日", $x);
+    print $d;
 
 //BMI(肥満指数)----
 //体重(kg) ÷ (身長(m) × 身長(m))
