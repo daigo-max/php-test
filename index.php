@@ -47,6 +47,8 @@
         print "さようなら<br>";
     }
 
+//------------------------------------
+
     //timestamp
 
     $x = time();
@@ -56,8 +58,20 @@
     print "<br>";
 
     //date();
-    $d = date("Y年n月d日", $x);
+    $d = date("Y年n月d日");
     print $d;
+    print "<br>";
+
+    //ファイル操作
+    $x = file_get_contents("abc.txt");
+
+    // nl2br()
+    $x = nl2br($x);
+
+    print $x;
+    print "<br>";
+    print "<br>";
+//-----------------------------------
 
 //BMI(肥満指数)----
 //体重(kg) ÷ (身長(m) × 身長(m))
