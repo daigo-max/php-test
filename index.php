@@ -29,7 +29,12 @@
         $bmi = calcBMI($height, $weight);
 
         print "BIMは". $bmi . "ですね<br>";
-        print "最近どう？<br>";
+
+        $x = "最近、調子はどうですか？<br>";
+
+        $x = mb_strimwidth($x, 0, 12, "...");
+        print $x;
+
         if( $name == "伊藤" ) {
             bye();
         } else {
